@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanCoop · Banca en línea</title>
+    <!-- Font Awesome para iconos (logo incluido) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-landmark"></i>
+            <span>BanCoop</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#credito-vehiculos">Créditos</a></li>
+                <li><a href="#leasing">Leasing</a></li>
+                <li><a href="#ahorro-estudiantil">Ahorros</a></li>
+                <li><a href="#footer">Servicio al cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Te ayuda a alcanzar tus metas</h1>
+    </section>
+
+    <div class="container">
+        <main>
+            <h2 class="section-title">Solicita nuestros productos</h2>
+            <div class="articles-grid">
+                <article id="ahorro-estudiantil">
+                    <h3>Ahorro Estudiantil</h3>
+                    <img src="https://picsum.photos/id/20/300/200" alt="Ahorro estudiantil" loading="lazy">
+                    <p>Equipos, equipos de la escuela, equipos de la universidad, equipos de la empresa, equipos de la organización.</p>
+                    <div class="more-info-content" id="info-ahorro">
+                        <p><strong>Más información:</strong> El ahorro estudiantil es un producto diseñado para jóvenes que desean comenzar a ahorrar para su educación superior. Ofrece tasas preferenciales y beneficios adicionales como seguros educativos.</p>
+                    </div>
+                    <a href="#" class="more-link" data-target="info-ahorro">Más información &raquo;</a>
+                </article>
+                <article id="credito-vehiculos">
+                    <h3>Crédito Vehículos</h3>
+                    <img src="https://picsum.photos/id/48/300/200" alt="Crédito vehículos" loading="lazy">
+                    <p>Equipos, equipos de la escuela, equipos de la universidad, equipos de la empresa, equipos de la organización.</p>
+                    <div class="more-info-content" id="info-vehiculos">
+                        <p><strong>Más información:</strong> Financiamos tu vehículo nuevo o usado con las mejores tasas del mercado. Plazos hasta 72 meses y posibilidad de financiar el 100% del valor.</p>
+                    </div>
+                    <a href="#" class="more-link" data-target="info-vehiculos">Más información &raquo;</a>
+                </article>
+                <article id="credito-hipotecario">
+                    <h3>Crédito Hipotecario</h3>
+                    <img src="https://picsum.photos/id/42/300/200" alt="Crédito hipotecario" loading="lazy">
+                    <p>Equipos, equipos de la escuela, equipos de la universidad, equipos de la empresa, equipos de la organización.</p>
+                    <div class="more-info-content" id="info-hipotecario">
+                        <p><strong>Más información:</strong> Adquiere tu vivienda propia con nuestro crédito hipotecario. Tasas fijas o variables, plazos hasta 20 años y seguros incluidos.</p>
+                    </div>
+                    <a href="#" class="more-link" data-target="info-hipotecario">Más información &raquo;</a>
+                </article>
+                <article id="leasing">
+                    <h3>Leasing</h3>
+                    <img src="https://picsum.photos/id/21/300/200" alt="Leasing empresarial" loading="lazy">
+                    <p>Equipos, equipos de la escuela, equipos de la universidad, equipos de la empresa, equipos de la organización.</p>
+                    <div class="more-info-content" id="info-leasing">
+                        <p><strong>Más información:</strong> El leasing financiero te permite adquirir maquinaria, equipos o vehículos para tu empresa con opción de compra al final del contrato.</p>
+                    </div>
+                    <a href="#" class="more-link" data-target="info-leasing">Más información &raquo;</a>
+                </article>
+            </div>
+        </main>
+
+        <aside>
+            <div class="sidebar-card">
+                <h3><i class="fas fa-user-lock"></i> Ingresa a tu cuenta</h3>
+                <form id="loginForm">
+                    <label for="cuenta">Cuenta:</label>
+                    <input type="text" id="cuenta" placeholder="Número de cuenta" required>
+
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo">
+                        <option value="ahorros">Ahorros</option>
+                        <option value="corriente">Corriente</option>
+                    </select>
+
+                    <label for="clave">Clave:</label>
+                    <input type="password" id="clave" placeholder="Ingrese su clave" required>
+
+                    <button type="submit">Ingresar</button>
+                </form>
+                <div id="loginMessage" class="info-message"></div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3><i class="fas fa-arrows-spin"></i> Transacciones</h3>
+                <ul class="info-list">
+                    <li><a href="#" class="info-link" data-target="info-banca-personal">Banca personal</a></li>
+                    <li><a href="#" class="info-link" data-target="info-banca-empresarial">Banca empresarial</a></li>
+                    <li><a href="#" class="info-link" data-target="info-banca-seguros">Banca seguros</a></li>
+                    <li><a href="#" class="info-link" data-target="info-pago-facturas">Pago de facturas</a></li>
+                </ul>
+                <div id="info-banca-personal" class="info-content">
+                    <p>Accede a tus cuentas, realiza transferencias y consulta tus movimientos desde cualquier lugar.</p>
+                </div>
+                <div id="info-banca-empresarial" class="info-content">
+                    <p>Gestiona las finanzas de tu empresa: pagos a proveedores, nóminas y más.</p>
+                </div>
+                <div id="info-banca-seguros" class="info-content">
+                    <p>Protege tu patrimonio con nuestros seguros de vida, hogar y vehículos.</p>
+                </div>
+                <div id="info-pago-facturas" class="info-content">
+                    <p>Paga tus servicios públicos, impuestos y tarjetas de crédito de manera rápida y segura.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3><i class="fas fa-credit-card"></i> Tarjetas de crédito</h3>
+                <ul class="info-list">
+                    <li><a href="#" class="info-link" data-target="info-visa">Credi Visa</a></li>
+                    <li><a href="#" class="info-link" data-target="info-mastercard">Credi Mastercard</a></li>
+                </ul>
+                <div id="info-visa" class="info-content">
+                    <p>Tarjeta Visa con programa de recompensas, millas y cuotas sin intereses en establecimientos aliados.</p>
+                </div>
+                <div id="info-mastercard" class="info-content">
+                    <p>Mastercard te ofrece descuentos exclusivos y la posibilidad de diferir tus compras.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="footer">
+        <p><i class="fas fa-phone-alt"></i> Línea gratuita 018000-00001</p>
+        <p>Banco central financiero - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript externo -->
+    <script src="js/js.js"></script>
+</body>
+</html>
